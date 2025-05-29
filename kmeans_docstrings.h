@@ -20,7 +20,7 @@ double dist_line(int x0, double y0, int x1, double y1, int x2, double y2);
 void graf_wcss(double* wcss);
 
 // Генерирует случайные точки в диапазоне [0, range)
-void generate_random(Point* data, int n, int range);
+void generate_rndm(Point* data, int n, int range);
 
 // Читает точки с ввода и проверяет правильность введенного формата
 void input(Point* data, int n);
