@@ -1,0 +1,68 @@
+ПРИМЕР INPUT:
+
+Enter number of points (1-1000): 15  // Ввод количества точек
+Generate randomly? (1 = yes, 0 = manual input): 1 // Формат ввода - рандомно или вписывать вручную
+
+ПРИМЕР OUTPUT:
+// Пересчёт центров до того момента пока точки вокруг центра не перестанут меняться
+[k=1] best run in 2 iterations.
+[k=2] best run in 4 iterations.
+[k=3] best run in 2 iterations.
+[k=4] best run in 3 iterations.
+[k=5] best run in 3 iterations.
+[k=6] best run in 3 iterations.
+[k=7] best run in 4 iterations.
+[k=8] best run in 2 iterations.
+[k=9] best run in 3 iterations.
+[k=10] best run in 3 iterations.
+[k=11] best run in 3 iterations.
+[k=12] best run in 3 iterations.
+[k=13] best run in 3 iterations.
+[k=14] best run in 3 iterations.
+[k=15] best run in 2 iterations.
+
+// График метода локтя
+Wcss schedule with 'Elbow Method':
+k =  1 | **************************************************  6315.20
+k =  2 | ***************************  3517.70
+k =  3 | **********  1274.36
+k =  4 | ******  812.43
+k =  5 | ***  480.08
+k =  6 | **  307.75
+k =  7 | *  170.50
+k =  8 | *  129.83
+k =  9 |   73.83
+k = 10 |   59.00
+k = 11 |   37.00
+k = 12 |   20.50
+k = 13 |   8.00
+k = 14 |   0.00
+k = 15 |   0.00
+Best k (elbow) = 4
+
+// Соотношение точек с их кластерами
+Show clusters? (1 = yes, 0 = no): 1 
+Cluster centroids (k = 4):
+Center 1: (13.30, 24.00)
+Center 2: (42.50, 4.50)
+Center 3: (43.00, 28.00)
+Center 4: (39.00, 22.00)
+Cluster 1:
+  (12.00, 25.00)
+  (25.00, 27.00)
+  (12.00, 25.00)
+  (4.00, 44.00)
+  (7.00, 0.00)
+  (11.00, 0.00)
+  (19.00, 37.00)
+  (7.00, 5.00)
+  (21.00, 43.00)
+  (15.00, 34.00)
+Cluster 2:
+  (44.00, 6.00)
+  (41.00, 3.00)
+Cluster 3:
+  (43.00, 28.00)
+Cluster 4:
+  (34.00, 23.00)
+  (44.00, 21.00)
