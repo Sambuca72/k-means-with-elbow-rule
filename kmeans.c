@@ -140,7 +140,7 @@ void graf_wcss(double* wcss)
 }
 
 // Генерируем случайные точки в пределах заданного диапазона
-void generate_random(Point* data, int n, int range) 
+void generate_rndm(Point* data, int n, int range) 
 {
     for (int i = 0; i < n; i++) 
     {
@@ -241,7 +241,7 @@ int main()
 
     // Ввод или генерация данных
     if (auto_mode)
-        generate_random(data, n, 50);
+        generate_rndm(data, n, 50);
     else
         input(data, n);
 
@@ -308,4 +308,3 @@ int main()
     free(tmp_centers);
     return 0;
 }
-
