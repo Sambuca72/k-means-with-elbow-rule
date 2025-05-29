@@ -18,8 +18,6 @@ Generate randomly? (1 = yes, 0 = manual input): 1 // Формат ввода - �
 [k=11] best run in 3 iterations.
 [k=12] best run in 3 iterations.
 [k=13] best run in 3 iterations.
-[k=14] best run in 3 iterations.
-[k=15] best run in 2 iterations.
 
 // График метода локтя
 Wcss schedule with 'Elbow Method':
