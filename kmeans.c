@@ -22,7 +22,7 @@ double dist_sq(Point a, Point b)
 }
 
 // Обновляем координаты центров кластеров как среднее всех точек внутри каждого
-void update_centers(Point* data, int n, int k, int* labels, Point* cent) 
+void update(Point* data, int n, int k, int* labels, Point* cent) 
 {
     int count[MAX_K] = {0};
     Point sum[MAX_K] = {0};
@@ -99,7 +99,7 @@ int kmeans(Point* data, int n, int k, int* labels, Point* centers)
         }
 
         // Обновляем координаты центров кластеров
-        update_centers(data, n, k, labels, centers);
+        update(data, n, k, labels, centers);
 
     } while (changed && iter < 100);  // Пока есть изменения и не достигнут лимит
     return iter;
